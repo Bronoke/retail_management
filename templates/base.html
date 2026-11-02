@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống quản lý bán hàng</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h2>RETAIL MANAGEMENT SYSTEM</h2>
+        <p>Hệ thống quản lý cửa hàng bán lẻ</p>
+    </header>
+
+    <nav>
+        <a href="/">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Đơn hàng</a>
+        <a href="#">Kho hàng</a>
+        <a href="#">Thống kê</a>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2026 - Nhóm dự án quản lý bán hàng</p>
+    </footer>
+</body>
+</html>
